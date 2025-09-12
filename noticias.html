@@ -1,0 +1,97 @@
+<!-- Página de Noticias - Sitio de noticias -->
+<!-- Autor: DanRivas -->
+<!-- Esta página muestra noticias generales y está conectada con las demás secciones -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Sitio de noticias</title>
+    <style>
+        /* Comentario: Estilos básicos para la página de noticias */
+        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+        header { background: #fff; padding: 10px 0; text-align: center; border-bottom: 2px solid #222; }
+        nav { display: flex; justify-content: center; gap: 40px; background: #eaeaea; padding: 10px 0; }
+        nav a { text-decoration: none; color: #222; font-weight: bold; padding: 5px 15px; border-radius: 5px; }
+        nav a.active, nav a:hover { background: #222; color: #fff; }
+        .top-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; background: #eaeaea; }
+        .search { display: flex; align-items: center; gap: 8px; }
+        .user-actions { display: flex; gap: 10px; }
+        .main-title { font-size: 2em; font-weight: bold; margin: 20px 0 10px; text-align: center; font-family: serif; }
+        .section-title { font-size: 1.5em; text-align: center; margin: 20px 0; font-style: italic; }
+        .news-grid { display: grid; grid-template-columns: 2fr 2fr 1fr; gap: 30px; max-width: 1100px; margin: 0 auto; }
+        .news-img { width: 100%; height: 150px; background: #bbb; display: block; margin-bottom: 10px; }
+        .news-row { display: flex; gap: 30px; margin: 30px auto 0; max-width: 1100px; }
+        .news-col { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+        .news-card { background: #ddd; padding: 15px; border-radius: 8px; margin-bottom: 10px; }
+        .news-card h3, .news-card h4 { margin: 0 0 8px; font-size: 1.1em; }
+        .news-card p { margin: 0 0 8px; font-size: 0.95em; }
+        .news-card .meta { font-size: 0.8em; color: #555; }
+        .news-main { background: #ddd; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .news-main .news-img { height: 200px; }
+        .news-main h2 { margin: 0 0 10px; font-size: 1.3em; }
+        .news-main p { margin: 0 0 10px; }
+        @media (max-width: 900px) {
+            .news-grid, .news-row { flex-direction: column; grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra superior con búsqueda y acciones de usuario -->
+    <div class="top-bar">
+        <div class="search">
+            <input type="text" placeholder="Buscar..." />
+            <span>Fecha actual</span>
+        </div>
+    </div>
+    <!-- Encabezado principal -->
+    <header>
+        <div class="main-title">Sitio de noticias</div>
+    </header>
+    <!-- Navegación entre páginas -->
+    <nav>
+        <!-- Comentario: Barra de navegación principal -->
+    <a href="home.html">Home</a>
+    <a href="deportes.html">Deportes</a>
+    <a href="economia.html">Economía</a>
+    <a href="cultura.html">Cultura</a>
+    <a href="arte.html">Arte</a>
+    <a href="noticias.html" class="active">Noticias</a>
+    </nav>
+    <!-- Título de sección -->
+    <div class="section-title">Noticias</div>
+    <!-- Contenido principal de noticias -->
+    <div class="news-grid">
+        <div>
+            <div class="news-img"></div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+        </div>
+        <div>
+            <div class="news-img"></div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+        </div>
+        <div class="news-card">
+            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+    </div>
+    <div class="news-row">
+        <div class="news-col">
+            <div class="news-card">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+        <div class="news-main">
+            <div class="news-img"></div>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div class="news-col">
+            <div class="news-card">
+                <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+    <!-- Comentario: Pie de página opcional -->
+</body>
+</html>
