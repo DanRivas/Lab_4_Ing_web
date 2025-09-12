@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes - Sitio de noticias</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff; }
+        header { display: flex; align-items: center; border-bottom: 2px solid #ccc; padding: 10px 30px 0 10px; }
+        .site-title { font-size: 2em; font-style: italic; font-weight: bold; flex: 1; }
+        .main-nav { display: flex; gap: 40px; font-size: 1.1em; font-weight: bold; }
+        .main-nav a { text-decoration: none; color: #000; padding-bottom: 4px; }
+        .main-nav a.active { border-bottom: 3px solid #000; }
+        .deportes-header { background: #eee; padding: 10px 30px; display: flex; align-items: flex-end; justify-content: space-between; }
+        .deportes-title { font-size: 4em; font-weight: 400; letter-spacing: -2px; }
+        .deportes-color { font-size: 1em; color: #e44; margin-left: 20px; }
+        .subnav-bar { display: flex; align-items: center; gap: 20px; background: #f5f5f5; padding: 0 30px; border-bottom: 2px solid #ccc; }
+        .subnav-bar a { text-decoration: none; color: #000; font-weight: bold; padding: 10px 0; border-bottom: 3px solid transparent; }
+        .subnav-bar a.active { border-bottom: 3px solid #000; }
+        .subnav-bar .etc { margin-left: auto; }
+        .subnav-bar .mas { writing-mode: vertical-lr; font-weight: bold; margin-left: 20px; background: #fff; border-radius: 6px; padding: 0 8px; border: 1px solid #000; }
+        .deportes-content { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; padding: 20px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .news-card { background: #eee; border-radius: 8px; padding: 10px; display: flex; flex-direction: column; }
+        .news-img { background: #ccc; height: 140px; border-radius: 6px; margin-bottom: 8px; border: 2px solid #222; }
+        .news-card h3 { font-size: 1em; margin: 0 0 5px 0; }
+        .news-card p { font-size: 0.95em; margin: 0 0 5px 0; }
+        .news-meta { display: flex; justify-content: space-between; font-size: 0.9em; color: #444; margin-top: 5px; }
+        .main-news-card { grid-column: span 2; }
+        .banner { background: #ccc; height: 400px; border-radius: 8px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-size: 1em; color: #222; border: 2px solid #222; }
+        .banner-note { font-size: 0.9em; color: #222; text-align: right; margin-bottom: 10px; }
+        @media (max-width: 1100px) {
+            .news-grid { grid-template-columns: 1fr; }
+            .deportes-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">Sitio de noticias</div>
+        <nav class="main-nav">
+            <a href="home.html">Home</a>
+            <a href="deportes.html" class="active">Deportes</a>
+            <a href="#">Economia</a>
+            <a href="#">Cultura</a>
+            <a href="#">Arte</a>
+            <a href="#">Noticias</a>
+        </nav>
+    </header>
+    <div class="deportes-header">
+        <div class="deportes-title">Deportes</div>
+        <div class="deportes-color">(Color vivo rojo?/amarillo?)</div>
+    </div>
+    <div class="subnav-bar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Football</a>
+        <a href="#">Basketball</a>
+        <a href="#">Tenis</a>
+        <a href="#">Formula 1</a>
+        <a href="#" class="etc">Etc.</a>
+        <span class="mas">Mas</span>
+    </div>
+    <div class="deportes-content">
+        <div>
+            <div class="news-grid">
+                <div class="news-card main-news-card">
+                    <div class="news-img"></div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="news-meta">
+                        <span>Categoría</span>
+                        <span>6h (hace cuanto)</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img"></div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <div class="news-meta">
+                        <span>Categoría</span>
+                        <span>6h (hace cuanto)</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img"></div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <div class="news-meta">
+                        <span>Categoría</span>
+                        <span>6h (hace cuanto)</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img"></div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <div class="news-meta">
+                        <span>Categoría</span>
+                        <span>6h (hace cuanto)</span>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img"></div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <div class="news-meta">
+                        <span>Categoría</span>
+                        <span>6h (hace cuanto)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="banner-note">(Algún tipo de banner, cambia con la subcategoría)</div>
+            <div class="banner"></div>
+        </div>
+    </div>
+</body>
+</html>
