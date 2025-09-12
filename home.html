@@ -13,9 +13,9 @@
         .site-title { text-align: center; flex: 1; font-size: 2em; font-style: italic; font-weight: bold; }
         .auth-buttons { display: flex; gap: 10px; }
         .auth-buttons button { padding: 6px 16px; border: 1px solid #000; background: #fff; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        nav { display: flex; gap: 40px; padding: 0 0 0 120px; font-size: 1.1em; font-weight: bold; }
-        nav a { text-decoration: none; color: #000; padding-bottom: 4px; }
-        nav a.active { border-bottom: 3px solid #000; }
+    nav { display: flex; justify-content: center; gap: 40px; background: #eaeaea; padding: 10px 0; font-size: 1.1em; font-weight: bold; }
+    nav a { text-decoration: none; color: #222; font-weight: bold; padding: 5px 15px; border-radius: 5px; }
+    nav a.active, nav a:hover { background: #222; color: #fff; }
         .headline-bar { display: flex; align-items: center; gap: 10px; padding: 10px 30px; font-size: 1.1em; border-bottom: 1px solid #ccc; }
         .headline-bar .live { color: red; font-weight: bold; }
         .headline-bar .time { color: #e44; font-weight: bold; }
@@ -45,9 +45,10 @@
         <div class="site-title">Sitio de noticias</div>
     </header>
     <nav>
+    <!-- Comentario: Barra de navegación principal -->
     <a href="home.html" class="active">Home</a>
     <a href="deportes.html">Deportes</a>
-    <a href="economia.html">Economia</a>
+    <a href="economia.html">Economía</a>
     <a href="cultura.html">Cultura</a>
     <a href="arte.html">Arte</a>
     <a href="noticias.html">Noticias</a>
