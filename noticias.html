@@ -9,26 +9,26 @@
     <title>Noticias | Sitio de noticias</title>
     <style>
         /* Comentario: Estilos básicos para la página de noticias */
-        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
-        header { background: #fff; padding: 10px 0; text-align: center; border-bottom: 2px solid #222; }
-        nav { display: flex; justify-content: center; gap: 40px; background: #eaeaea; padding: 10px 0; }
-        nav a { text-decoration: none; color: #222; font-weight: bold; padding: 5px 15px; border-radius: 5px; }
-        nav a.active, nav a:hover { background: #222; color: #fff; }
+    body { font-family: Arial, sans-serif; margin: 0; background: linear-gradient(135deg, #fffbe7 0%, #fff6d6 100%); }
+    header { background: #fffbe7; padding: 10px 0; text-align: center; border-bottom: 2px solid #f1c40f; }
+    nav { display: flex; justify-content: center; gap: 40px; background: #f1c40f; padding: 10px 0; box-shadow: 0 2px 8px #0001; }
+    nav a { text-decoration: none; color: #fff; font-weight: bold; padding: 5px 15px; border-radius: 5px; transition: background 0.2s; }
+    nav a.active, nav a:hover { background: #fff; color: #f1c40f; }
         .top-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; background: #eaeaea; }
         .search { display: flex; align-items: center; gap: 8px; }
         .user-actions { display: flex; gap: 10px; }
-        .main-title { font-size: 2em; font-weight: bold; margin: 20px 0 10px; text-align: center; font-family: serif; }
-        .section-title { font-size: 1.5em; text-align: center; margin: 20px 0; font-style: italic; }
+    .main-title { font-size: 2em; font-weight: bold; margin: 20px 0 10px; text-align: center; font-family: serif; color: #f1c40f; }
+    .section-title { font-size: 1.5em; text-align: center; margin: 20px 0; font-style: italic; color: #f1c40f; }
         .news-grid { display: grid; grid-template-columns: 2fr 2fr 1fr; gap: 30px; max-width: 1100px; margin: 0 auto; }
         .news-img { width: 100%; height: 150px; background: #bbb; display: block; margin-bottom: 10px; }
         .news-row { display: flex; gap: 30px; margin: 30px auto 0; max-width: 1100px; }
         .news-col { flex: 1; display: flex; flex-direction: column; gap: 20px; }
-        .news-card { background: #ddd; padding: 15px; border-radius: 8px; margin-bottom: 10px; }
+    .news-card { background: #fffbe7; padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 5px solid #f1c40f; box-shadow: 0 2px 8px #f1c40f20; }
         .news-card h3, .news-card h4 { margin: 0 0 8px; font-size: 1.1em; }
         .news-card p { margin: 0 0 8px; font-size: 0.95em; }
         .news-card .meta { font-size: 0.8em; color: #555; }
-        .news-main { background: #ddd; padding: 20px; border-radius: 8px; margin: 20px 0; }
-        .news-main .news-img { height: 200px; }
+    .news-main { background: #fffbe7; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 2px 8px #f1c40f20; }
+    .news-main .news-img { height: 200px; background: linear-gradient(135deg, #f1c40f 40%, #fffbe7 100%); }
         .news-main h2 { margin: 0 0 10px; font-size: 1.3em; }
         .news-main p { margin: 0 0 10px; }
         @media (max-width: 900px) {
@@ -64,31 +64,31 @@
     <div class="news-grid">
         <div>
             <div class="news-img"></div>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>Inician campaña global para limpiar océanos</h3>
         </div>
         <div>
             <div class="news-img"></div>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>Primer auto eléctrico latinoamericano sale al mercado</h3>
         </div>
         <div class="news-card">
-            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <h4>Investigadores desarrollan robot para rescate en desastres</h4>
+            <p>El nuevo robot "RescueBot" puede operar en zonas de difícil acceso y fue probado con éxito en simulacros de terremoto.</p>
         </div>
     </div>
     <div class="news-row">
         <div class="news-col">
             <div class="news-card">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>La ciudad de Lima inaugura el parque ecológico más grande de Sudamérica, con áreas de conservación y educación ambiental.</p>
             </div>
         </div>
         <div class="news-main">
             <div class="news-img"></div>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Un grupo de jóvenes crea una red de voluntarios para apoyar a comunidades afectadas por inundaciones en Centroamérica.</p>
         </div>
         <div class="news-col">
             <div class="news-card">
-                <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <h4>Descubren nueva tecnología para purificar agua</h4>
+                <p>La innovación, desarrollada en universidades mexicanas, podría mejorar el acceso a agua potable en zonas rurales.</p>
             </div>
         </div>
     </div>

@@ -9,32 +9,32 @@
     <title>Arte | Sitio de noticias</title>
     <style>
         /* Comentario: Estilos básicos para la página de arte */
-        body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
-        header { background: #fff; padding: 10px 0; text-align: center; border-bottom: 2px solid #222; }
-        nav { display: flex; justify-content: center; gap: 40px; background: #eaeaea; padding: 10px 0; }
-        nav a { text-decoration: none; color: #222; font-weight: bold; padding: 5px 15px; border-radius: 5px; }
-        nav a.active, nav a:hover { background: #222; color: #fff; }
+    body { font-family: Arial, sans-serif; margin: 0; background: linear-gradient(135deg, #f0f4ff 0%, #e3eaff 100%); }
+    header { background: #e3eaff; padding: 10px 0; text-align: center; border-bottom: 2px solid #34495e; }
+    nav { display: flex; justify-content: center; gap: 40px; background: #34495e; padding: 10px 0; box-shadow: 0 2px 8px #0001; }
+    nav a { text-decoration: none; color: #fff; font-weight: bold; padding: 5px 15px; border-radius: 5px; transition: background 0.2s; }
+    nav a.active, nav a:hover { background: #fff; color: #34495e; }
         .top-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; background: #eaeaea; }
         .search { display: flex; align-items: center; gap: 8px; }
         .user-actions { display: flex; gap: 10px; }
-        .main-title { font-size: 2em; font-weight: bold; margin: 20px 0 10px; text-align: center; font-family: serif; }
-        .section-title { font-size: 1.5em; text-align: center; margin: 20px 0; font-style: italic; }
-        .art-title { font-size: 2em; text-align: center; margin: 20px 0 10px; font-weight: bold; }
-        .art-banner { width: 100%; height: 180px; background: #bbb; margin: 0 auto 20px; display: block; border-radius: 8px; }
+    .main-title { font-size: 2em; font-weight: bold; margin: 20px 0 10px; text-align: center; font-family: serif; color: #34495e; }
+    .section-title { font-size: 1.5em; text-align: center; margin: 20px 0; font-style: italic; color: #34495e; }
+    .art-title { font-size: 2em; text-align: center; margin: 20px 0 10px; font-weight: bold; color: #34495e; }
+    .art-banner { width: 100%; height: 180px; background: linear-gradient(135deg, #34495e 40%, #e3eaff 100%); margin: 0 auto 20px; display: block; border-radius: 8px; }
         .art-layout { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 20px; max-width: 1100px; margin: 0 auto; }
         .side-img { width: 100%; height: 120px; background: #bbb; display: block; margin-bottom: 10px; border-radius: 8px; }
         .side-news { display: flex; flex-direction: column; gap: 20px; }
         .side-item { background: #ddd; padding: 10px; border-radius: 8px; }
         .side-item h3 { margin: 0 0 5px; font-size: 1em; }
         .side-item p { margin: 0 0 5px; font-size: 0.95em; }
-        .main-news { background: #ddd; padding: 20px; border-radius: 8px; text-align: center; }
+    .main-news { background: #f0f4ff; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px #34495e20; }
         .main-news h2 { margin: 0 0 10px; font-size: 1.2em; }
         .main-news p { margin: 0 0 10px; }
         .main-news-row { display: flex; gap: 30px; justify-content: center; margin-top: 20px; }
-        .main-news-col { flex: 1; background: #ddd; padding: 10px; border-radius: 8px; margin: 0 10px; }
+    .main-news-col { flex: 1; background: #f0f4ff; padding: 10px; border-radius: 8px; margin: 0 10px; border-left: 5px solid #34495e; box-shadow: 0 2px 8px #34495e20; }
         .main-news-col h3 { margin: 0 0 5px; font-size: 1em; }
         .main-news-col p { margin: 0 0 5px; font-size: 0.95em; }
-    .main-news-col .side-img { height: 120px; }
+    .main-news-col .side-img { height: 120px; background: linear-gradient(135deg, #34495e 40%, #e3eaff 100%); }
     .main-news-col .side-img.blue-border { border: 2px solid #2196f3; }
         @media (max-width: 900px) {
             .art-layout, .main-news-row { flex-direction: column; grid-template-columns: 1fr; }
@@ -69,23 +69,23 @@
     <div class="art-banner"></div>
     <!-- Contenido principal de arte -->
     <div class="main-news">
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h2>Exposición internacional de esculturas llega a Madrid</h2>
+    <p>Más de 100 artistas presentan sus obras en el evento "Formas y Espacios", que busca acercar el arte contemporáneo al público general.</p>
     </div>
     <div class="main-news-row">
         <div class="main-news-col">
             <div class="side-img"></div>
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <h3>Pintora mexicana inaugura mural en Nueva York</h3>
+            <p>El mural "Raíces Urbanas" decora una estación de metro y celebra la diversidad cultural de la ciudad.</p>
         </div>
         <div class="main-news-col">
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <h3>Galería virtual permite recorrer museos desde casa</h3>
+            <p>La plataforma "Arte360" ofrece visitas guiadas en línea a museos de todo el mundo, con experiencias interactivas.</p>
         </div>
         <div class="main-news-col">
             <div class="side-img blue-border"></div>
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <h3>Escultor argentino gana premio internacional</h3>
+            <p>Su obra "Horizontes de Acero" fue reconocida por su innovación y técnica en el certamen de arte contemporáneo de Berlín.</p>
         </div>
     </div>
     <!-- Comentario: Pie de página opcional -->
